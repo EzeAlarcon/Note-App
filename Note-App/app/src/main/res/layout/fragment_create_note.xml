@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.noterapp.mvvm.NotesViewModel" />
+
+
+
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.CreateNoteFragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:text="@={viewModel.inputTitle}"
+        android:textColorHint="@color/black"
+        android:maxLines="1"
+        android:fontFamily="@font/regular"
+        android:hint=" Enter Title"
+        android:id="@+id/enterTitle"
+        android:background="@drawable/edittextdesign"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:text="@={viewModel.inputSubtitle}"
+
+        android:maxLines="1"
+        android:fontFamily="@font/regular"
+        android:textColorHint="@color/black"
+        android:hint=" Enter Subtitle"
+        android:id="@+id/enterSubtitle"
+        android:background="@drawable/edittextdesign"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:maxLines="10"
+        android:lines="15"
+        android:text="@={viewModel.inputNoteText}"
+        android:gravity="start"
+        android:hint=" Enter Note"
+        android:fontFamily="@font/regular"
+
+        android:textColorHint="@color/black"
+        android:id="@+id/enterNote"
+        android:background="@drawable/edittextdesign"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveBtn"
+        android:fontFamily="@font/regular"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>
+
+</layout>

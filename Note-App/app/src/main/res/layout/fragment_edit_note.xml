@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.noterapp.mvvm.NotesViewModel" />
+
+
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.EditNoteFragment">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:id="@+id/titleEt"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/edittextdesign"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:fontFamily="@font/regular"
+            android:id="@+id/subet"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edittextdesign"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:maxLines="10"
+            android:lines="15"
+            android:gravity="start"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/white"
+            android:id="@+id/noteEt"
+            android:background="@drawable/edittextdesign"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/updateNoteBtn"
+            android:fontFamily="@font/regular"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</layout>
